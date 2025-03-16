@@ -108,7 +108,7 @@ public class TowerAttackTargetState: BaseState
         Enemy enemy = hit.collider.gameObject.GetComponentInParent<Enemy>();
   
         _spawnerModule.Enemies.Remove(enemy);
-        GameObject.Destroy(enemy.gameObject);
+        enemy.SetState(new EnemyDeadState(enemy));
 
         _tower.SetState(new TowerFindTargetState(_tower));
         //Implement setStateEnemy;
