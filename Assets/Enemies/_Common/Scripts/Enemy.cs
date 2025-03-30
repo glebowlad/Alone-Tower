@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Transform _fireTarget;
     [SerializeField] private EnemyAttack _enemyAttack;
     [SerializeField] private Collider _collider;
-    [SerializeField] private ParticleSystem _particleSystem;
+    [SerializeField] private ParticleSystem _deadEffect;
     [SerializeField] private GameObject _visuals;
     [SerializeField] private Animator _animator;
 
@@ -20,11 +20,11 @@ public class Enemy : MonoBehaviour
     public Animator Animator => _animator;
 
     public AIUnit GetAIUnit() => _aiUnit;
-    public GameObject GetVisuals() => _visuals;
-    public Collider GetCollider() => _collider;
+    public GameObject Visuals => _visuals;
+    public Collider Collider => _collider;
     public Transform GetFireTarget() => _fireTarget;
     public EnemyAttack GetEnemyAttack() => _enemyAttack;
-    public ParticleSystem GetParticleSystem() => _particleSystem;
+    public ParticleSystem DeadEffect => _deadEffect;
     public void SetTower(Tower tower) => _tower = tower;
     public Tower GetTower()=> _tower;
 

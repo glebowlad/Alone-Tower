@@ -11644,7 +11644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2144307424989607752, guid: 81d637f0ccd4bda488bab9bdfb95847a, type: 3}
       propertyPath: m_Name
-      value: VFXExplosion
+      value: VFXFire
       objectReference: {fileID: 0}
     - target: {fileID: 2144307424989607752, guid: 81d637f0ccd4bda488bab9bdfb95847a, type: 3}
       propertyPath: m_TagString
@@ -17858,7 +17858,7 @@ PrefabInstance:
       objectReference: {fileID: 1051538973}
     - target: {fileID: 3370031335986375343, guid: 5e78d180c2c53d749b1ebb7a729d93b4, type: 3}
       propertyPath: _attackRadius
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3370031335986375343, guid: 5e78d180c2c53d749b1ebb7a729d93b4, type: 3}
       propertyPath: _healthSlider
