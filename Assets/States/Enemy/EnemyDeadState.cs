@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,10 +19,12 @@ public class EnemyDeadState : BaseState
     public override void Entry()
     {
         base.Entry();
-       // DestroyEnemy(_enemy);
+        DestroyEnemy(_enemy);
        
         
     }
+
+
     public override void Update()
     {
         base.Update();
@@ -30,15 +33,11 @@ public class EnemyDeadState : BaseState
     {
         base.Exit();
     }
-    //private IEnumerator DestroyEnemy(Enemy enemy)
-    //{
-    //    Debug.Log($"{enemy.gameObject.GetInstanceID()}");
-    //    enemy.DeadEffect.Play();
-    //    GameObject.Destroy(enemy.Visuals);
-    //    enemy.Collider.enabled = false;
+    private void DestroyEnemy(MonoBehaviour enemy)
+    {
+        enemy.StartCoroutine("DestroyEnemy");
+    }
 
-    //    yield return new WaitForSeconds(0.4f);
-    //    GameObject.Destroy(enemy.gameObject);
-    //    yield return null;
-    //}
+
+    
 }

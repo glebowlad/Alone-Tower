@@ -77,7 +77,7 @@ MonoBehaviour:
   _fireTarget: {fileID: 8559655253019192681}
   _enemyAttack: {fileID: 7811484113517065751}
   _collider: {fileID: 4707511719137212984}
-  _particleSystem: {fileID: 1397309748009363840}
+  _deadEffect: {fileID: 1397309748009363840}
   _visuals: {fileID: 6709747158693442162}
   _animator: {fileID: 589127983560502476}
   _isAlive: 1
@@ -251,9 +251,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 2
-  damageRate: 2
   _animator: {fileID: 0}
-  healthSlider: {fileID: 0}
+  towerHealthSlider: {fileID: 0}
 --- !u!1 &7472771218264010456
 GameObject:
   m_ObjectHideFlags: 0

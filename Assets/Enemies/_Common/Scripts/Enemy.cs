@@ -1,5 +1,6 @@
 using AloneTower;
 using AloneTower.Towers;
+using System.Collections;
 using System;
 using UnityEngine;
 
@@ -58,5 +59,16 @@ public class Enemy : MonoBehaviour
         _state.Entry();
     }
 
+    private IEnumerator DestroyEnemy()
+    {
+        Debug.Log($"{gameObject.GetInstanceID()}");
+        _deadEffect.Play();
+        GameObject.Destroy(Visuals);
+        _collider.enabled = false;
+
+        yield return new WaitForSeconds(0.4f);
+        GameObject.Destroy(gameObject);
+        yield return null;
+    }
 
 }
