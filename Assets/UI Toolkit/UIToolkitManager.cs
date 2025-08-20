@@ -3,22 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class UIToolkitManager : MonoBehaviour
 {
     [SerializeField] UIDocument uiDocument;
     [SerializeField] VisualElement root;
 
-    [SerializeField] GameObject uiComboSlider;
-    [SerializeField] GameObject uiTowerSlider;
-    [SerializeField] GameObject uiTowerHealthSlider;
-
-    private void Awake()
-    {
-        uiComboSlider.SetActive(false);
-        uiTowerSlider.SetActive(false);
-        uiTowerHealthSlider.SetActive(false);
-    }
     void Start()
     {
         root= uiDocument.rootVisualElement;
@@ -47,13 +38,10 @@ public class UIToolkitManager : MonoBehaviour
 
     private void PlayGame(ClickEvent evt)
     {
+        SceneManager.LoadScene(1);
         var mainPanel = root.Q<VisualElement>("MainPanel");
         mainPanel.style.display= DisplayStyle.None;
-        // Need to fix this 
-        uiComboSlider.SetActive(true);
-        uiTowerSlider.SetActive(true);
-        //
-        uiTowerHealthSlider.SetActive(true);
+      
 
     }
 }
