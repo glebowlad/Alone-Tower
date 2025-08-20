@@ -1,0 +1,23 @@
+.button {
+    width: 281px;
+    height: 77px;
+    position: relative;
+    opacity: 1;
+    display: flex;
+    visibility: visible;
+    overflow: visible;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    align-items: auto;
+    justify-content: space-between;
+    align-self: center;
+    font-size: 40px;
+    text-overflow: clip;
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    background-color: rgb(40, 196, 207);
+    -unity-text-outline-color: rgba(0, 0, 0, 0);
+}

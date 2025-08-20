@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets.uss?fileID=7433441132597879392&amp;guid=89855edc679b02a41988083e8f0c41b2&amp;type=3#Stylesheets" />
+    <ui:VisualElement name="MainPanel" style="flex-grow: 1; display: flex; justify-content: space-around; align-items: auto; flex-direction: column; align-self: center; width: 1080px; margin-top: 0; margin-right: 65px; margin-bottom: 0; margin-left: 65px; -unity-text-outline-color: rgba(0, 0, 0, 0); background-color: rgba(53, 62, 125, 0.72); -unity-background-image-tint-color: rgb(255, 255, 255); height: 1920px; color: rgb(27, 27, 27); -unity-text-align: upper-center; visibility: visible; overflow: visible; opacity: 1;">
+        <ui:Button text="Start" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlayButton" enable-rich-text="true" class="button" style="-unity-text-align: middle-center; text-overflow: clip;" />
+        <ui:Button text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingsButton" class="button" style="-unity-text-align: middle-center; text-overflow: clip;" />
+        <ui:Button text="Exit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ExitButton" enable-rich-text="true" class="button" style="-unity-text-align: middle-center; text-overflow: clip;" />
+    </ui:VisualElement>
+</ui:UXML>
