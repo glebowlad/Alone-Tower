@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.google.external-dependency-manager": {
+      "version": "https://github.com/googlesamples/unity-jar-resolver.git?path=upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "6eee66190fb6d7182518cc3b41e3919e054699b6"
+    },
     "com.unity.adaptiveperformance": {
       "version": "5.0.0",
       "depth": 1,
@@ -15,15 +22,6 @@
       "source": "registry",
       "dependencies": {
         "com.unity.adaptiveperformance": "5.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.ads": {
-      "version": "4.12.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -157,6 +155,15 @@
         "com.unity.ext.nunit": "1.0.6",
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.textmeshpro": {
+      "version": "3.0.9",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
