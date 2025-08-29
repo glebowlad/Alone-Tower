@@ -12,6 +12,6 @@ public class RestartManager : MonoBehaviour
         gamesPlayed++;
         if(gamesPlayed ==2)
         AdsManager.Instance.interstitialAds.ShowInterstitialAd();
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
